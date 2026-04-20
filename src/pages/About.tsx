@@ -89,7 +89,6 @@ export default function About() {
 
   return (
     <main>
-      {/* Hero */}
       <section
         className="relative pt-40 pb-24 px-6 overflow-hidden"
         style={{
@@ -128,13 +127,12 @@ export default function About() {
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             Fundada com a determinação de transformar o transporte de carga em
-            Moçambique, a TRANSMAX cresceu de 2 para 10 camiões em poucos anos —
-            e não temos intenção de parar.
+            Moçambique, a <b>Nsualulu Investimentos</b> cresceu de 3 para 14
+            camiões em poucos anos — e não temos intenção de parar.
           </p>
         </div>
       </section>
 
-      {/* Mission / Vision / Values */}
       <section className="py-24 px-6" style={{ background: "#0d1117" }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -143,18 +141,18 @@ export default function About() {
                 key={v.title}
                 className="animate-on-scroll p-8 border border-white/5 hover:border-brand-500/30 transition-all duration-300"
                 style={{
-                  background: "#161b22",
+                  background: "#212c34d5",
                   transitionDelay: `${i * 100}ms`,
                 }}
               >
                 <div
                   className="w-12 h-12 flex items-center justify-center mb-5"
-                  style={{ background: "rgba(255,124,10,0.12)" }}
+                  style={{ background: "#0a99ff)" }}
                 >
-                  <v.icon size={24} className="text-brand-500" />
+                  <v.icon size={24} className="text-[#0a99ff]" />
                 </div>
                 <h3
-                  className="text-white text-2xl uppercase mb-3"
+                  className="text-[#fff] text-2xl uppercase mb-3"
                   style={{
                     fontFamily: "'Barlow Condensed', sans-serif",
                     fontWeight: 700,
@@ -175,10 +173,9 @@ export default function About() {
         </div>
       </section>
 
-      {/* Timeline */}
       <section
         className="py-24 px-6 relative overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #0d1117, #1a0a00)" }}
+        style={{ background: "linear-gradient(135deg, #0d1117, #0a0908)" }}
       >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-on-scroll">
@@ -193,7 +190,7 @@ export default function About() {
               style={{
                 fontFamily: "'Barlow Condensed', sans-serif",
                 fontWeight: 900,
-                fontSize: "clamp(2.5rem, 5vw, 4rem)",
+                fontSize: "clamp(3rem, 8vw, 5rem)",
               }}
             >
               Marcos do nosso{" "}
@@ -202,7 +199,6 @@ export default function About() {
           </div>
 
           <div className="relative">
-            {/* Line */}
             <div
               className="absolute left-1/2 top-0 bottom-0 w-px hidden lg:block"
               style={{
@@ -225,10 +221,10 @@ export default function About() {
                   >
                     <div
                       className="p-6 border border-white/5 inline-block w-full lg:max-w-sm"
-                      style={{ background: "#161b22" }}
+                      style={{ background: "#212c34d5" }}
                     >
                       <span
-                        className="text-brand-500 text-4xl"
+                        className="text-white text-4xl"
                         style={{
                           fontFamily: "'Barlow Condensed', sans-serif",
                           fontWeight: 900,
@@ -251,7 +247,6 @@ export default function About() {
                     </div>
                   </div>
 
-                  {/* Center dot */}
                   <div className="hidden lg:flex w-5 h-5 rounded-full border-2 border-brand-500 bg-dark-900 shrink-0 relative z-10" />
 
                   <div className="flex-1 hidden lg:block" />
@@ -262,7 +257,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team */}
       <section className="py-24 px-6" style={{ background: "#0d1117" }}>
         <div className="max-w-7xl mx-auto">
           <div className="mb-14 animate-on-scroll">
@@ -277,7 +271,7 @@ export default function About() {
               style={{
                 fontFamily: "'Barlow Condensed', sans-serif",
                 fontWeight: 900,
-                fontSize: "clamp(2.5rem, 5vw, 4rem)",
+                fontSize: "clamp(3rem, 8vw, 5rem)",
               }}
             >
               A nossa <span style={{ color: "#0a99ff" }}>Equipa</span>
@@ -290,15 +284,14 @@ export default function About() {
                 key={member.name}
                 className="animate-on-scroll group p-6 border border-white/5 hover:border-brand-500/40 transition-all duration-300"
                 style={{
-                  background: "#161b22",
+                  background: "#212c34d5",
                   transitionDelay: `${i * 80}ms`,
                 }}
               >
-                {/* Avatar placeholder */}
                 <div
                   className="w-16 h-16 rounded-full flex items-center justify-center mb-4 text-2xl font-display text-brand-500"
                   style={{
-                    background: "rgba(255,124,10,0.1)",
+                    background: "#0a99ff",
                     fontFamily: "'Barlow Condensed', sans-serif",
                     fontWeight: 900,
                   }}
@@ -332,7 +325,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Achievements */}
       <section className="py-24 px-6" style={{ background: "#161b22" }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -374,14 +366,14 @@ export default function About() {
                 <div
                   key={item.label}
                   className="p-6 border border-white/5 text-center"
-                  style={{ background: "#0d1117" }}
+                  style={{ background: "#212c34d5" }}
                 >
                   <item.icon
                     size={24}
-                    className="text-brand-500 mx-auto mb-3"
+                    className="text-[#0a99ff] mx-auto mb-3"
                   />
                   <div
-                    className="text-brand-500"
+                    className="text-[#fff]"
                     style={{
                       fontFamily: "'Barlow Condensed', sans-serif",
                       fontWeight: 900,
@@ -404,7 +396,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-20 px-6" style={{ background: "#0a99ff" }}>
         <div className="max-w-3xl mx-auto text-center animate-on-scroll">
           <h2

@@ -87,7 +87,6 @@ export default function Contact() {
 
   return (
     <main>
-      {/* Hero */}
       <section
         className="pt-40 pb-20 px-6 relative overflow-hidden"
         style={{ background: "linear-gradient(135deg, #080c10, #0a99ff17)" }}
@@ -112,7 +111,7 @@ export default function Contact() {
             style={{
               fontFamily: "'Barlow Condensed', sans-serif",
               fontWeight: 900,
-              fontSize: "clamp(3rem, 8vw, 6rem)",
+              fontSize: "clamp(3rem, 8vw, 5rem)",
             }}
           >
             Solicite o seu <span style={{ color: "#0a99ff" }}>Orçamento</span>
@@ -127,7 +126,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Contact info cards */}
       <section className="py-12 px-6" style={{ background: "#0d1117" }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -140,7 +138,7 @@ export default function Contact() {
                   transitionDelay: `${i * 80}ms`,
                 }}
               >
-                <c.icon size={20} className="text-blue-500 mb-3" />
+                <c.icon size={20} className="text-[#0a99ff] mb-3" />
                 <p
                   className="text-gray-500 text-xs uppercase tracking-wider mb-1"
                   style={{
@@ -168,10 +166,8 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Form + Map */}
       <section className="py-16 px-6" style={{ background: "#0d1117" }}>
         <div className="max-w-7xl mx-auto grid lg:grid-cols-5 gap-10">
-          {/* Form */}
           <div className="lg:col-span-3 animate-on-scroll">
             <div
               className="p-8 border border-white/5"
@@ -414,7 +410,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Sidebar info */}
           <div className="lg:col-span-2 flex flex-col gap-5 animate-on-scroll">
             <div
               className="p-7 border border-white/5"
@@ -441,7 +436,7 @@ export default function Contact() {
                 href="tel:+258840000000"
                 className="btn-primary text-white text-sm py-3 w-full justify-center"
               >
-                <Phone size={16} />
+                <Phone size={16} className="text-[#0a99ff]" />
                 Ligar Agora
               </a>
             </div>
@@ -463,7 +458,7 @@ export default function Contact() {
                 className="flex items-start gap-3 text-gray-400 text-sm"
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
-                <MapPin size={16} className="text-brand-500 mt-0.5 shrink-0" />
+                <MapPin size={16} className="text-[#0a99ff] mt-0.5 shrink-0" />
                 <div>
                   <p className="text-white font-medium">Sede Principal</p>
                   <p className="mt-1">

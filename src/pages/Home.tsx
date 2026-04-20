@@ -67,7 +67,6 @@ export default function Home() {
           }}
         />
 
-        {/* Orange glow */}
         <div
           className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full blur-3xl pointer-events-none"
           style={{ background: "rgba(10, 120, 255, 0.07)" }}
@@ -77,14 +76,13 @@ export default function Home() {
           style={{ background: "rgba(10, 112, 255, 0.04)" }}
         />
 
-        {/* Big decorative text */}
         <div
           className="absolute right-0 bottom-0 select-none pointer-events-none hidden lg:block"
           style={{
             fontFamily: "'Barlow Condensed', sans-serif",
             fontWeight: 900,
             fontSize: "22rem",
-            color: "rgba(0, 136, 255, 0.58)",
+            color: "rgba(0, 136, 255, 0.15)",
             lineHeight: 1,
             letterSpacing: "-0.02em",
           }}
@@ -103,13 +101,12 @@ export default function Home() {
                 Frota disponível · Beira, Moçambique
               </span>
             </div>
-
             <h1
               className="uppercase leading-none mb-6"
               style={{
                 fontFamily: "'Barlow Condensed', sans-serif",
                 fontWeight: 900,
-                fontSize: "clamp(2.5rem, 9vw, 5rem)",
+                fontSize: "clamp(3rem, 8vw, 5rem)",
                 letterSpacing: "-0.01em",
                 color: "white",
               }}
@@ -118,7 +115,6 @@ export default function Home() {
               <br />
               com Precisão
             </h1>
-
             <p
               className="text-gray-300 text-lg mb-10 leading-relaxed max-w-xl"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
@@ -128,7 +124,6 @@ export default function Home() {
               cobertura nacional e compromisso absoluto com a pontualidade e
               segurança da sua carga.
             </p>
-
             <div className="flex flex-col sm:flex-row gap-4 text-white">
               <Link to="/contacto" className="btn-primary">
                 Pedir Orçamento <ArrowRight size={18} />
@@ -137,8 +132,6 @@ export default function Home() {
                 Conhecer a Empresa <ChevronRight size={18} />
               </Link>
             </div>
-
-            {/* Quick trust indicators */}
             <div className="flex flex-wrap gap-6 mt-12">
               {[
                 { icon: ShieldCheck, text: "Carga Segurada" },
@@ -221,13 +214,13 @@ export default function Home() {
                 key={s.title}
                 className="animate-on-scroll group p-7 border border-white/5 hover:border-brand-500/50 transition-all duration-300 hover:-translate-y-1"
                 style={{
-                  background: "#161b22",
+                  background: "#212c34d5",
                   transitionDelay: `${i * 80}ms`,
                 }}
               >
                 <div
                   className="w-12 h-12 flex items-center justify-center mb-5"
-                  style={{ background: "rgba(10, 59, 255, 0.12)" }}
+                  style={{ background: "#0a99ff" }}
                 >
                   <s.icon size={24} className="text-brand-500" />
                 </div>
@@ -254,8 +247,11 @@ export default function Home() {
       </section>
 
       <section
-        className="py-24 px-6 relative overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #0d1117, #1a0a00)" }}
+        className="py-10 px-6 relative overflow-hidden"
+        style={{
+          background:
+            "linear-gradient(135deg, #0d1117, rgba(10, 100, 255, 0.04))",
+        }}
       >
         <div
           className="absolute top-0 right-0 w-1/2 h-full pointer-events-none"
@@ -264,7 +260,7 @@ export default function Home() {
               "linear-gradient(135deg, transparent, rgba(10, 100, 255, 0.04))",
           }}
         />
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-25 items-center">
           <div>
             <p
               className="text-brand-500 tracking-[0.3em] uppercase text-sm mb-3 animate-on-scroll"
@@ -340,7 +336,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Visual block */}
           <div className="animate-on-scroll relative">
             <div
               className="absolute -top-4 -left-4 w-full h-full border border-brand-500/20"
@@ -422,31 +417,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
-      <section className="py-24 px-6" style={{ background: "#0d1117" }}>
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 animate-on-scroll">
-            <p
-              className="text-brand-500 tracking-[0.3em] uppercase text-sm mb-3"
-              style={{ fontFamily: "'DM Sans', sans-serif" }}
-            >
-              Clientes Satisfeitos
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── CTA FINAL ── */}
       <section
-        className="py-24 px-6 relative overflow-hidden"
+        className="py-20 px-6 relative overflow-hidden"
         style={{ background: "linear-gradient(135deg, #1a0a00, #0d1117)" }}
       >
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,124,10,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,124,10,0.06) 1px, transparent 1px)",
-            backgroundSize: "50px 50px",
+            background: "#080c10",
           }}
         />
         <div className="max-w-4xl mx-auto text-center relative animate-on-scroll">
