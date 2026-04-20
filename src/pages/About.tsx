@@ -93,14 +93,14 @@ export default function About() {
       <section
         className="relative pt-40 pb-24 px-6 overflow-hidden"
         style={{
-          background: "linear-gradient(135deg, #080c10 0%, #1a0a00 100%)",
+          background: "linear-gradient(135deg, #080c10 0%, #0a99ff17 100%)",
         }}
       >
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(255,124,10,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,124,10,0.05) 1px, transparent 1px)",
+              "linear-gradient(#ff7c0a0d 1px, transparent 1px), linear-gradient(90deg, rgba(255,124,10,0.05) 1px, transparent 1px)",
             backgroundSize: "70px 70px",
           }}
         />

@@ -44,27 +44,6 @@ const stats = [
   { value: "5+", label: "Anos de Experiência" },
 ];
 
-const testimonials = [
-  {
-    name: "António Machava",
-    company: "Distribuidora Central, Lda",
-    text: "A NSUALULU INVESTIMENTOS transformou a nossa logística. Pontualidade impecável e carga sempre em perfeito estado.",
-    stars: 5,
-  },
-  {
-    name: "Maria Fernanda",
-    company: "Construtora Futura",
-    text: "Parceiros de confiança para o transporte dos nossos materiais de construção. Recomendo fortemente.",
-    stars: 5,
-  },
-  {
-    name: "Carlos Nhantumbo",
-    company: "AgroExport Moçambique",
-    text: "Serviço profissional, preço justo e comunicação transparente. A escolha certa para a nossa empresa.",
-    stars: 5,
-  },
-];
-
 export default function Home() {
   useScrollAnimation();
 
@@ -455,64 +434,6 @@ export default function Home() {
             >
               Clientes Satisfeitos
             </p>
-            <h2
-              className="uppercase text-white"
-              style={{
-                fontFamily: "'Barlow Condensed', sans-serif",
-                fontWeight: 900,
-                fontSize: "clamp(2.5rem, 5vw, 4rem)",
-              }}
-            >
-              O que dizem de <span style={{ color: "#0a99ff" }}>Nós</span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
-              <div
-                key={t.name}
-                className="animate-on-scroll p-7 border border-white/5 relative"
-                style={{
-                  background: "#161b22",
-                  transitionDelay: `${i * 100}ms`,
-                }}
-              >
-                <Quote
-                  size={32}
-                  className="text-brand-500/20 absolute top-5 right-5"
-                />
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: t.stars }).map((_, j) => (
-                    <Star
-                      key={j}
-                      size={14}
-                      fill="#0a99ff"
-                      className="text-brand-500"
-                    />
-                  ))}
-                </div>
-                <p
-                  className="text-gray-300 text-sm leading-relaxed mb-5"
-                  style={{ fontFamily: "'DM Sans', sans-serif" }}
-                >
-                  "{t.text}"
-                </p>
-                <div>
-                  <p
-                    className="text-white font-semibold text-sm"
-                    style={{ fontFamily: "'DM Sans', sans-serif" }}
-                  >
-                    {t.name}
-                  </p>
-                  <p
-                    className="text-brand-500 text-xs tracking-wider"
-                    style={{ fontFamily: "'DM Sans', sans-serif" }}
-                  >
-                    {t.company}
-                  </p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

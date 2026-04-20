@@ -90,7 +90,7 @@ export default function Contact() {
       {/* Hero */}
       <section
         className="pt-40 pb-20 px-6 relative overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #080c10, #1a0a00)" }}
+        style={{ background: "linear-gradient(135deg, #080c10, #0a99ff17)" }}
       >
         <div
           className="absolute inset-0 pointer-events-none"
