@@ -68,11 +68,17 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-24 z-10">
           <div className="max-w-3xl">
             <div
-              className="inline-flex items-center gap-2 border border-brand-500/40 bg-brand-500/10 px-4 py-2 mb-8"
-              style={{ fontFamily: "'DM Sans', sans-serif" }}
+              className="inline-flex items-center gap-2 px-4 py-2 mb-8"
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                border: "2px solid #0a99ff",
+              }}
             >
-              <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse" />
-              <span className="text-brand-400 text-sm font-medium tracking-wider uppercase">
+              <span
+                className="w-2 h-2 rounded-full animate-pulse"
+                style={{ background: "#22c55e" }}
+              />
+              <span className="text-white text-sm font-medium tracking-wider uppercase">
                 Frota disponível · Beira, Moçambique
               </span>
             </div>
@@ -82,7 +88,7 @@ export default function Home() {
               style={{
                 fontFamily: "'Barlow Condensed', sans-serif",
                 fontWeight: 900,
-                fontSize: "clamp(3rem, 8vw, 5rem)",
+                fontSize: "clamp(3rem, 8vw, 3rem)",
                 letterSpacing: "-0.01em",
                 color: "white",
               }}
@@ -153,7 +159,7 @@ export default function Home() {
               style={{
                 fontFamily: "'Barlow Condensed', sans-serif",
                 fontWeight: 900,
-                fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
+                fontSize: "clamp(2.5rem, 5vw, 3rem)",
               }}
             >
               Serviços de <span style={{ color: "#0a99ff" }}>Excelência</span>
@@ -198,7 +204,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
       <section
         className="py-20 px-6 relative overflow-hidden"
         style={{ background: "#080c10" }}
@@ -209,7 +214,7 @@ export default function Home() {
             style={{
               fontFamily: "'Barlow Condensed', sans-serif",
               fontWeight: 900,
-              fontSize: "clamp(3rem, 7vw, 5.5rem)",
+              fontSize: "clamp(3rem, 7vw, 3rem)",
             }}
           >
             Pronto para Movimentar a

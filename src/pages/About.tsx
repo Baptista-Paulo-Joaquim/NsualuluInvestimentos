@@ -116,7 +116,7 @@ export default function About() {
             style={{
               fontFamily: "'Barlow Condensed', sans-serif",
               fontWeight: 900,
-              fontSize: "clamp(3rem, 8vw, 6.5rem)",
+              fontSize: "clamp(3rem, 8vw, 3rem)",
               maxWidth: "14ch",
             }}
           >
@@ -193,7 +193,7 @@ export default function About() {
               style={{
                 fontFamily: "'Barlow Condensed', sans-serif",
                 fontWeight: 900,
-                fontSize: "clamp(3rem, 8vw, 5rem)",
+                fontSize: "clamp(3rem, 8vw, 3rem)",
               }}
             >
               Marcos do nosso{" "}
@@ -272,7 +272,7 @@ export default function About() {
               style={{
                 fontFamily: "'Barlow Condensed', sans-serif",
                 fontWeight: 900,
-                fontSize: "clamp(3rem, 8vw, 5rem)",
+                fontSize: "clamp(3rem, 8vw, 3rem)",
               }}
             >
               A nossa <span style={{ color: "#0a99ff" }}>Equipa</span>

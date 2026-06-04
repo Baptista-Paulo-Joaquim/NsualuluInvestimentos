@@ -111,7 +111,7 @@ export default function Contact() {
             style={{
               fontFamily: "'Barlow Condensed', sans-serif",
               fontWeight: 900,
-              fontSize: "clamp(3rem, 8vw, 5rem)",
+              fontSize: "clamp(3rem, 8vw, 3rem)",
             }}
           >
             Solicite o seu <span style={{ color: "#0a99ff" }}>Orçamento</span>
