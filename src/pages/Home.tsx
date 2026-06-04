@@ -76,20 +76,6 @@ export default function Home() {
           style={{ background: "rgba(10, 112, 255, 0.04)" }}
         />
 
-        <div
-          className="absolute right-0 bottom-0 select-none pointer-events-none hidden lg:block"
-          style={{
-            fontFamily: "'Barlow Condensed', sans-serif",
-            fontWeight: 900,
-            fontSize: "22rem",
-            color: "rgba(0, 136, 255, 0.15)",
-            lineHeight: 1,
-            letterSpacing: "-0.02em",
-          }}
-        >
-          CARGO
-        </div>
-
         <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-24 z-10">
           <div className="max-w-3xl">
             <div

@@ -54,9 +54,9 @@ const values = [
 
 const milestones = [
   {
-    year: "2019",
+    year: "2018",
     title: "Fundação",
-    desc: "TRANSMAX nasce com 2 camiões e grande ambição.",
+    desc: "NSUALULU nasce com 2 camiões e grande ambição.",
   },
   {
     year: "2020",
@@ -305,7 +305,7 @@ export default function About() {
                   {member.name}
                 </h3>
                 <p
-                  className="text-brand-500 text-xs tracking-wider uppercase mb-3"
+                  className="text-white font-semibold text-xs tracking-wider uppercase mb-3"
                   style={{
                     fontFamily: "'Barlow Condensed', sans-serif",
                     fontWeight: 600,
@@ -361,7 +361,7 @@ export default function About() {
                 { icon: Users, val: "50+", label: "Clientes Activos" },
                 { icon: Award, val: "98%", label: "Taxa de Satisfação" },
                 { icon: TrendingUp, val: "5x", label: "Crescimento da Frota" },
-                { icon: Target, val: "3", label: "Províncias Cobertas" },
+                { icon: Target, val: "6", label: "Províncias Cobertas" },
               ].map((item) => (
                 <div
                   key={item.label}
