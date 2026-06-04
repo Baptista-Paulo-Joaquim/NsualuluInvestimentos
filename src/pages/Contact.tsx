@@ -72,7 +72,6 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate submission
     setTimeout(() => {
       setLoading(false);
       setSent(true);
@@ -87,6 +86,7 @@ export default function Contact() {
 
   return (
     <main>
+      {/* HEADER */}
       <section
         className="pt-40 pb-20 px-6 relative overflow-hidden"
         style={{ background: "linear-gradient(135deg, #080c10, #0a99ff17)" }}
@@ -95,7 +95,7 @@ export default function Contact() {
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(255,124,10,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,124,10,0.05) 1px, transparent 1px)",
+              "linear-gradient(rgba(10,153,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(10,153,255,0.05) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
@@ -126,6 +126,7 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* CONTACT INFO CARDS */}
       <section className="py-12 px-6" style={{ background: "#0d1117" }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -166,8 +167,10 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* FORM + SIDEBAR */}
       <section className="py-16 px-6" style={{ background: "#0d1117" }}>
         <div className="max-w-7xl mx-auto grid lg:grid-cols-5 gap-10">
+          {/* FORM */}
           <div className="lg:col-span-3 animate-on-scroll">
             <div
               className="p-8 border border-white/5"
@@ -388,17 +391,22 @@ export default function Contact() {
                     />
                   </div>
 
+                  {/* BOTÃO CORRIGIDO */}
                   <button
                     type="submit"
                     disabled={loading}
-                    className="btn-primary w-full justify-center text-base py-4"
-                    style={{ opacity: loading ? 0.7 : 1 }}
+                    className="w-full flex items-center justify-center gap-2 py-4 text-base font-semibold text-white transition-all duration-200 hover:opacity-90 disabled:opacity-60"
+                    style={{
+                      background: "#0a99ff",
+                      fontFamily: "'DM Sans', sans-serif",
+                      cursor: loading ? "not-allowed" : "pointer",
+                    }}
                   >
                     {loading ? (
-                      <span className="flex items-center gap-2">
-                        <span className="w-4 h-4border-2 border-white/40 border-t-white rounded-full animate-spin" />
+                      <>
+                        <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
                         A enviar...
-                      </span>
+                      </>
                     ) : (
                       <>
                         Enviar Pedido <Send size={16} />
@@ -410,6 +418,7 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* SIDEBAR */}
           <div className="lg:col-span-2 flex flex-col gap-5 animate-on-scroll">
             <div
               className="p-7 border border-white/5"
@@ -434,12 +443,17 @@ export default function Contact() {
               </p>
               <a
                 href="tel:+258840000000"
-                className="btn-primary text-white text-sm py-3 w-full justify-center"
+                className="flex items-center justify-center gap-2 w-full py-3 text-sm font-semibold text-white transition-all duration-200 hover:opacity-90"
+                style={{
+                  background: "#0a99ff",
+                  fontFamily: "'DM Sans', sans-serif",
+                }}
               >
-                <Phone size={16} className="text-[#0a99ff]" />
+                <Phone size={16} />
                 Ligar Agora
               </a>
             </div>
+
             <div
               className="p-7 border border-white/5"
               style={{ background: "#161b22" }}

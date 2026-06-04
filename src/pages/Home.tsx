@@ -31,15 +31,8 @@ const services = [
   {
     icon: BarChart3,
     title: "Soluções Empresariais",
-    desc: "Parcerias estratégicas para empresas que precisam de transporte frequente com tarifas customizadas.",
+    desc: "Parcerias estratégicas para empresas com necessidade de transporte frequente e tarifas customizadas.",
   },
-];
-
-const stats = [
-  { value: "10", label: "Camiões na Frota" },
-  { value: "500+", label: "Entregas Realizadas" },
-  { value: "98%", label: "Taxa de Pontualidade" },
-  { value: "5+", label: "Anos de Experiência" },
 ];
 
 export default function Home() {
@@ -51,6 +44,7 @@ export default function Home() {
 
   return (
     <main>
+      {/* HERO */}
       <section
         className="relative min-h-screen flex items-center overflow-hidden"
         style={{
@@ -62,18 +56,13 @@ export default function Home() {
           className="absolute inset-0 opacity-5"
           style={{
             backgroundImage:
-              "linear-gradient(hsla(228, 100%, 52%, 0.30) 1px, transparent 1px), linear-gradient(90deg, rgba(10, 186, 255, 0.3) 1px, transparent 1px)",
+              "linear-gradient(rgba(10,153,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(10,153,255,0.3) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
-
         <div
           className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full blur-3xl pointer-events-none"
           style={{ background: "rgba(10, 120, 255, 0.07)" }}
-        />
-        <div
-          className="absolute bottom-1/3 left-1/3 w-64 h-64 rounded-full blur-3xl pointer-events-none"
-          style={{ background: "rgba(10, 112, 255, 0.04)" }}
         />
 
         <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-24 z-10">
@@ -87,6 +76,7 @@ export default function Home() {
                 Frota disponível · Beira, Moçambique
               </span>
             </div>
+
             <h1
               className="uppercase leading-none mb-6"
               style={{
@@ -101,16 +91,18 @@ export default function Home() {
               <br />
               com Precisão
             </h1>
+
             <p
               className="text-gray-300 text-lg mb-10 leading-relaxed max-w-xl"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Empresa de transporte de carga em crescimento, com frota de{" "}
+              Empresa de transporte de carga com frota de{" "}
               <strong className="text-white">10 camiões modernos</strong>,
-              cobertura nacional e compromisso absoluto com a pontualidade e
-              segurança da sua carga.
+              cobertura nacional e compromisso com a pontualidade e segurança da
+              sua carga.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 text-white">
+
+            <div className="flex flex-col sm:flex-row gap-4 text-white mb-12">
               <Link to="/contacto" className="btn-primary">
                 Pedir Orçamento <ArrowRight size={18} />
               </Link>
@@ -118,7 +110,8 @@ export default function Home() {
                 Conhecer a Empresa <ChevronRight size={18} />
               </Link>
             </div>
-            <div className="flex flex-wrap gap-6 mt-12">
+
+            <div className="flex flex-wrap gap-6">
               {[
                 { icon: ShieldCheck, text: "Carga Segurada" },
                 { icon: Clock, text: "Entrega Pontual" },
@@ -145,34 +138,7 @@ export default function Home() {
         />
       </section>
 
-      <section style={{ background: "#0a99ff" }}>
-        <div className="max-w-7xl mx-auto px-6 py-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            {stats.map((s) => (
-              <div key={s.label} className="animate-on-scroll">
-                <div
-                  className="text-white uppercase"
-                  style={{
-                    fontFamily: "'Barlow Condensed', sans-serif",
-                    fontWeight: 900,
-                    fontSize: "3rem",
-                    lineHeight: 1,
-                  }}
-                >
-                  {s.value}
-                </div>
-                <div
-                  className="text-white/80 text-sm tracking-wider uppercase mt-1"
-                  style={{ fontFamily: "'DM Sans', sans-serif" }}
-                >
-                  {s.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      {/* SERVICES */}
       <section className="py-24 px-6" style={{ background: "#0d1117" }}>
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 animate-on-scroll">
@@ -200,7 +166,7 @@ export default function Home() {
                 key={s.title}
                 className="animate-on-scroll group p-7 border border-white/5 hover:border-brand-500/50 transition-all duration-300 hover:-translate-y-1"
                 style={{
-                  background: "#212c34d5",
+                  background: "#161b22",
                   transitionDelay: `${i * 80}ms`,
                 }}
               >
@@ -208,7 +174,7 @@ export default function Home() {
                   className="w-12 h-12 flex items-center justify-center mb-5"
                   style={{ background: "#0a99ff" }}
                 >
-                  <s.icon size={24} className="text-brand-500" />
+                  <s.icon size={24} className="text-white" />
                 </div>
                 <h3
                   className="text-white text-xl uppercase mb-3"
@@ -232,187 +198,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        className="py-10 px-6 relative overflow-hidden"
-        style={{
-          background:
-            "linear-gradient(135deg, #0d1117, rgba(10, 100, 255, 0.04))",
-        }}
-      >
-        <div
-          className="absolute top-0 right-0 w-1/2 h-full pointer-events-none"
-          style={{
-            background:
-              "linear-gradient(135deg, transparent, rgba(10, 100, 255, 0.04))",
-          }}
-        />
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-25 items-center">
-          <div>
-            <p
-              className="text-brand-500 tracking-[0.3em] uppercase text-sm mb-3 animate-on-scroll"
-              style={{ fontFamily: "'DM Sans', sans-serif" }}
-            >
-              Por que nos escolher
-            </p>
-            <h2
-              className="uppercase text-white leading-none mb-6 animate-on-scroll"
-              style={{
-                fontFamily: "'Barlow Condensed', sans-serif",
-                fontWeight: 900,
-                fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
-              }}
-            >
-              A Diferença{" "}
-              <span style={{ color: "#0a99ff" }}>NSUALULU INVESTIMENTOS</span>
-            </h2>
-            <p
-              className="text-gray-300 leading-relaxed mb-8 animate-on-scroll"
-              style={{ fontFamily: "'DM Sans', sans-serif" }}
-            >
-              Não somos apenas mais uma empresa de transporte. Somos parceiros
-              no crescimento do seu negócio, com foco absoluto na fiabilidade,
-              comunicação transparente e cuidado com cada carga que
-              transportamos.
-            </p>
-
-            <div className="space-y-4 animate-on-scroll">
-              {[
-                {
-                  title: "Frota Moderna & Mantida",
-                  desc: "10 veículos em manutenção preventiva regular, prontos para qualquer rota.",
-                },
-                {
-                  title: "Motoristas Experientes",
-                  desc: "Equipa treinada, com conhecimento das rotas nacionais e protocolos de segurança.",
-                },
-                {
-                  title: "Rastreamento de Carga",
-                  desc: "Saiba sempre onde está a sua mercadoria em tempo real.",
-                },
-                {
-                  title: "Suporte 24/7",
-                  desc: "Equipa disponível a qualquer hora para responder às suas necessidades urgentes.",
-                },
-              ].map((item) => (
-                <div key={item.title} className="flex gap-4">
-                  <div
-                    className="w-1.5 shrink-0 mt-1"
-                    style={{
-                      background: "#0a99ff",
-                      height: "auto",
-                      minHeight: "24px",
-                    }}
-                  />
-                  <div>
-                    <h4
-                      className="text-white font-semibold text-base mb-0.5"
-                      style={{ fontFamily: "'DM Sans', sans-serif" }}
-                    >
-                      {item.title}
-                    </h4>
-                    <p
-                      className="text-gray-400 text-sm"
-                      style={{ fontFamily: "'DM Sans', sans-serif" }}
-                    >
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="animate-on-scroll relative">
-            <div
-              className="absolute -top-4 -left-4 w-full h-full border border-brand-500/20"
-              style={{ zIndex: 0 }}
-            />
-            <div
-              className="relative p-10"
-              style={{
-                background: "#161b22",
-                border: "1px solid rgba(255,255,255,0.05)",
-                zIndex: 1,
-              }}
-            >
-              <div className="grid grid-cols-2 gap-6">
-                {[
-                  { val: "10", label: "Camiões", sub: "Frota própria" },
-                  {
-                    val: "98%",
-                    label: "Pontualidade",
-                    sub: "Entregas a tempo",
-                  },
-                  { val: "24/7", label: "Suporte", sub: "Sempre disponível" },
-                  { val: "0", label: "Perdas", sub: "Carga em segurança" },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="p-5 border border-white/5"
-                    style={{ background: "#0d1117" }}
-                  >
-                    <div
-                      className="text-[#0a99ff]"
-                      style={{
-                        fontFamily: "'Barlow Condensed', sans-serif",
-                        fontWeight: 900,
-                        fontSize: "2.5rem",
-                        lineHeight: 1,
-                      }}
-                    >
-                      {item.val}
-                    </div>
-                    <div
-                      className="text-white text-sm font-semibold mt-1"
-                      style={{ fontFamily: "'DM Sans', sans-serif" }}
-                    >
-                      {item.label}
-                    </div>
-                    <div
-                      className="text-gray-500 text-xs mt-0.5"
-                      style={{ fontFamily: "'DM Sans', sans-serif" }}
-                    >
-                      {item.sub}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div
-                className="mt-6 p-5 border-l-4 border-brand-500"
-                style={{ background: "rgba(255,124,10,0.06)" }}
-              >
-                <p
-                  className="text-gray-300 text-sm italic"
-                  style={{ fontFamily: "'DM Sans', sans-serif" }}
-                >
-                  "A nossa missão é simples: a sua carga parte a tempo, chega em
-                  segurança."
-                </p>
-                <p
-                  className="text-[#0a99ff] text-xs mt-2 tracking-wider uppercase"
-                  style={{
-                    fontFamily: "'Barlow Condensed', sans-serif",
-                    fontWeight: 600,
-                  }}
-                >
-                  — Direcção NSUALULU INVESTIMENTOS
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {/* CTA */}
       <section
         className="py-20 px-6 relative overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #1a0a00, #0d1117)" }}
+        style={{ background: "#080c10" }}
       >
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background: "#080c10",
-          }}
-        />
         <div className="max-w-4xl mx-auto text-center relative animate-on-scroll">
           <h2
             className="uppercase text-white leading-none mb-6"

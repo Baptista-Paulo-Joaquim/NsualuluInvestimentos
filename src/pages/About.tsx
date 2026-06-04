@@ -89,6 +89,7 @@ export default function About() {
 
   return (
     <main>
+      {/* HERO */}
       <section
         className="relative pt-40 pb-24 px-6 overflow-hidden"
         style={{
@@ -99,7 +100,7 @@ export default function About() {
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              "linear-gradient(#ff7c0a0d 1px, transparent 1px), linear-gradient(90deg, rgba(255,124,10,0.05) 1px, transparent 1px)",
+              "linear-gradient(rgba(10,153,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(10,153,255,0.05) 1px, transparent 1px)",
             backgroundSize: "70px 70px",
           }}
         />
@@ -127,12 +128,13 @@ export default function About() {
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             Fundada com a determinação de transformar o transporte de carga em
-            Moçambique, a <b>Nsualulu Investimentos</b> cresceu de 3 para 14
+            Moçambique, a <b>Nsualulu Investimentos</b> cresceu de 2 para 10
             camiões em poucos anos — e não temos intenção de parar.
           </p>
         </div>
       </section>
 
+      {/* MISSÃO / VISÃO / VALORES */}
       <section className="py-24 px-6" style={{ background: "#0d1117" }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -147,12 +149,12 @@ export default function About() {
               >
                 <div
                   className="w-12 h-12 flex items-center justify-center mb-5"
-                  style={{ background: "#0a99ff)" }}
+                  style={{ background: "#0a99ff" }}
                 >
-                  <v.icon size={24} className="text-[#0a99ff]" />
+                  <v.icon size={24} className="text-white" />
                 </div>
                 <h3
-                  className="text-[#fff] text-2xl uppercase mb-3"
+                  className="text-white text-2xl uppercase mb-3"
                   style={{
                     fontFamily: "'Barlow Condensed', sans-serif",
                     fontWeight: 700,
@@ -173,6 +175,7 @@ export default function About() {
         </div>
       </section>
 
+      {/* TIMELINE */}
       <section
         className="py-24 px-6 relative overflow-hidden"
         style={{ background: "linear-gradient(135deg, #0d1117, #0a0908)" }}
@@ -206,7 +209,6 @@ export default function About() {
                   "linear-gradient(to bottom, transparent, #0a99ff, transparent)",
               }}
             />
-
             <div className="space-y-8 lg:space-y-0">
               {milestones.map((m, i) => (
                 <div
@@ -246,9 +248,7 @@ export default function About() {
                       </p>
                     </div>
                   </div>
-
                   <div className="hidden lg:flex w-5 h-5 rounded-full border-2 border-brand-500 bg-dark-900 shrink-0 relative z-10" />
-
                   <div className="flex-1 hidden lg:block" />
                 </div>
               ))}
@@ -257,6 +257,7 @@ export default function About() {
         </div>
       </section>
 
+      {/* EQUIPA */}
       <section className="py-24 px-6" style={{ background: "#0d1117" }}>
         <div className="max-w-7xl mx-auto">
           <div className="mb-14 animate-on-scroll">
@@ -289,7 +290,7 @@ export default function About() {
                 }}
               >
                 <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mb-4 text-2xl font-display text-brand-500"
+                  className="w-16 h-16 rounded-full flex items-center justify-center mb-4 text-2xl text-white"
                   style={{
                     background: "#0a99ff",
                     fontFamily: "'Barlow Condensed', sans-serif",
@@ -305,7 +306,7 @@ export default function About() {
                   {member.name}
                 </h3>
                 <p
-                  className="text-white font-semibold text-xs tracking-wider uppercase mb-3"
+                  className="text-[#0a99ff] text-xs tracking-wider uppercase mb-3"
                   style={{
                     fontFamily: "'Barlow Condensed', sans-serif",
                     fontWeight: 600,
@@ -325,6 +326,7 @@ export default function About() {
         </div>
       </section>
 
+      {/* CONQUISTAS */}
       <section className="py-24 px-6" style={{ background: "#161b22" }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -361,7 +363,7 @@ export default function About() {
                 { icon: Users, val: "50+", label: "Clientes Activos" },
                 { icon: Award, val: "98%", label: "Taxa de Satisfação" },
                 { icon: TrendingUp, val: "5x", label: "Crescimento da Frota" },
-                { icon: Target, val: "6", label: "Províncias Cobertas" },
+                { icon: Target, val: "3", label: "Províncias Cobertas" },
               ].map((item) => (
                 <div
                   key={item.label}
@@ -373,7 +375,7 @@ export default function About() {
                     className="text-[#0a99ff] mx-auto mb-3"
                   />
                   <div
-                    className="text-[#fff]"
+                    className="text-white"
                     style={{
                       fontFamily: "'Barlow Condensed', sans-serif",
                       fontWeight: 900,
@@ -396,6 +398,7 @@ export default function About() {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-20 px-6" style={{ background: "#0a99ff" }}>
         <div className="max-w-3xl mx-auto text-center animate-on-scroll">
           <h2
@@ -412,15 +415,16 @@ export default function About() {
             className="text-white/80 mb-8"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
-            Junte-se a mais de 50 empresas que confiam na TRANSMAX para as suas
-            necessidades de transporte.
+            Junte-se a mais de 50 empresas que confiam na NSUALULU INVESTIMENTOS
+            para as suas necessidades de transporte.
           </p>
           <Link
             to="/contacto"
-            className="inline-flex items-center gap-2 bg-white text-brand-600 font-display font-700 tracking-wider uppercase px-8 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            className="inline-flex items-center gap-2 bg-white font-semibold tracking-wider uppercase px-8 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
             style={{
               fontFamily: "'Barlow Condensed', sans-serif",
               fontWeight: 700,
+              color: "#0a99ff",
             }}
           >
             Entrar em Contacto <ArrowRight size={20} />
